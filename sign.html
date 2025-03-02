@@ -8,21 +8,21 @@
 </head>
 <body>
     <form class="cadastro_form">
-        <h4>Bem-Vindo</h4>
-    <div id="campo">
-        <p>Username</p>
-        <input id="username" type="text">
+        <h4>Cadastro</h4>
+    <div id="logina">
+        <a href="login.html">Já tem uma conta?</a>
     </div>
     <div id="campo">
-        <p>Password</p>
-        <input id="password" type="password">
+        <input id="username" placeholder="Username" type="text">
     </div>
-    <div id="emailcampo">
-        <p>Email</p>
-        <input type="email" id="email">
+    <div id="campo">
+        <input id="password" placeholder="Password" type="password">
+    </div>
+    <div id="campo">
+        <input placeholder="Email" type="email" id="email">
     </div>
 
-    <input type="button" onclick="cadastrar()" value="Cadastrar">
+    <button onclick="cadastrar()">Cadastrar</button>
     </form>
 
 <script src="script/script.js"></script>

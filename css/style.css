@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-body{
+#signB{
     height: 100vh; /* Faz o body ocupar 100% da altura da tela */
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
@@ -65,7 +65,7 @@ body{
     width: 20%;
     text-decoration: none;
 }
-#logina{
+.cadastro_form #logina {
 
     width: 80%;
 }
@@ -89,7 +89,7 @@ body{
     margin: 10px;
 }
 
-.cadastro_form button{
+.cadastro_form #cadastrarbtn{
     border: none;
     border-radius: 2px;
     height: 50px;
@@ -127,7 +127,7 @@ body{
         font-size: 30px;
     }
 
-    .cadastro_form button{
+    .cadastro_form #cadastrarbtn{
         border: none;
         border-radius: 6px;
         height: 50px;
@@ -148,6 +148,108 @@ body{
         animation: title 5s infinite linear;
         height: 40px;
         width: 80%;
+    }
+}
+
+
+
+
+/*              LOGIN                       */
+
+.login-form{
+    box-shadow: 5px 5px 10px rgba(51, 12, 83, 0.5);
+    backdrop-filter: blur(100px);
+    border-radius: 20px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-direction: column;
+    width: 40%;
+    height: 80%;
+}
+
+.login-form a{
+    text-align: start;
+    color: black;
+    width: 20%;
+    text-decoration: none;
+}
+.login-form #logina {
+    width: 85%;
+    margin-bottom: 50px;
+}
+
+a:hover{
+    color: blue;
+}
+
+.login-form h4{
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: arial;
+    color: rgb(31, 38, 139);
+    text-shadow: 2px 2px 4px rgba(200, 38, 250, 0.5);
+    animation: title 5s infinite linear;
+    height: 70px;
+    width: 88%;
+}
+
+@keyframes title {
+    0%{transform: rotate(0deg); top: 10px;}
+    25%{transform: rotate(0.5deg);}
+    50%{transform: rotate(0deg); top: -10px;}
+    75%{transform: rotate(-0.5deg);}
+    100%{transform: rotate(0deg); top: 10px;}
+}
+
+.login-form #campo{
+    margin: 10px;
+}
+.login-form #campo input{
+    width: 35vw;
+    height: 8vh;
+    background: rgb(255, 255, 255);
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+.login-form #loginbtn{
+    width: 90%;
+    height: 55px;
+    border: none;
+    background: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    .login-form{
+        width: 90%;
+    }
+    .login-form #campo input{
+        width: 80vw;
+    }
+}
+
+@media (max-width: 240px) {
+    .login-form h4{
+        font-size: 40px;
+    }
+
+    .login-form{
+        height: 60%;
+    }
+    .login-form h4{
+        font-size: 35px;
+    }
+    .login-form a{
+        font-size: 15px;
+        margin-bottom: 10px;
     }
 }
 

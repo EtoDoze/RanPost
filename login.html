@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <form>
+<body id="signB">
+    <form class="login-form">
         <h4>Login</h4>
-        <div id="campo">
-            <p>Email</p>
-            <input id="email" type="email">
+        <div id="logina">
+            <a href="sign.html">Não tem uma conta? clique aqui!</a>
         </div>
         <div id="campo">
-            <p>Password</p>
-            <input id="password" type="password">
+            <input id="email" type="email" placeholder="Email">
+        </div>
+        <div id="campo">
+            <input id="password" type="password" placeholder="Password">
         </div>
 
-        <input type="button" onclick="login()" value="Logar">
+        <input id="loginbtn" type="button" onclick="login()" value="Logar">
     </form>
 
 <script src="script/script.js"></script>

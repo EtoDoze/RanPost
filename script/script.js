@@ -1,4 +1,4 @@
-const webservice = "http://localhost:3000"
+const webservice = "https://ranpost-backend.onrender.com" //"http://localhost:3000"
 
 async function cadastrar() {
     const email = document.getElementById("email").value;

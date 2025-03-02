@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    background: rgb(177, 177, 177);
+    border-end-start-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+}
+
+header h6{
+    width: 150px;
+    font-weight: bolder;
+    font-family: cursive;
+    margin: 5px;
+    animation: text 2s infinite linear ;
+}
+
+@keyframes text {
+    0%{font-family: cursive;}
+    25%{font-family: arial;}
+    50%{font-family: monospace}
+    75%{font-family:serif}
+    100%{font-family:fantasy}
+}
+

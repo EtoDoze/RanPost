@@ -255,11 +255,31 @@ a:hover{
 
 
 /*              INDEX                   */
+
+
+
+#Bindex{
+    background: linear-gradient(0deg, #9aa4ff, #6d75c0, #6152a5, #6b347c, #a941c4);
+    background-size: 100vw 200vh; /* Aumenta o tamanho do gradiente */
+    animation: gradientAnimation 15s ease infinite; /* Aplica a animação */
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%; /* Posição inicial do gradiente */
+    }
+    50% {
+      background-position: 100% 50%; /* Posição intermediária */
+    }
+    100% {
+      background-position: 0% 50%; /* Volta à posição inicial */
+    }
+  }
+
 header{
     width: 100%;
     height: 10vh;
-    background: rgb(177, 177, 177);
-    border-end-start-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(51, 12, 83, 0.5);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -274,6 +294,23 @@ header h6{
     animation: text 2s infinite linear ;
 }
 
+#username{
+    margin: 10px;
+    font-family: arial;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#perfilcontent{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+}
+#perfilcontent i{
+    font-size: 50px;
+    color: black;
+}
 @keyframes text {
     0%{font-family: cursive;}
     25%{font-family: arial;}

@@ -91,7 +91,7 @@ async function verificarToken() {
 
       
             if (window.location.pathname.includes("index.html")) {
-              document.getElementById("username").innerText = `${data.username}`;
+              document.getElementById("user").innerText = `${data.username}`;
               const cadastrarbtn = document.getElementById("cadastro")
               cadastrarbtn.remove()
               const logarbnt = document.getElementById("logar")

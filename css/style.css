@@ -279,7 +279,7 @@ a:hover{
 header{
     width: 100%;
     height: 10vh;
-    background: rgb(0, 0, 0);
+    background: rgb(12, 7, 19);
     box-shadow: 5px 5px 10px rgba(51, 12, 83, 0.5);
     display: flex;
     justify-content: space-between;
@@ -305,10 +305,11 @@ header h6{
     animation: text 2s infinite linear ;
 }
 
-#username{
+#user{
     margin: 10px;
     font-family: arial;
     font-size: 25px;
+    color: white;
     font-weight: bold;
 }
 
@@ -317,11 +318,21 @@ header h6{
     text-decoration: none;
     font-weight: bold;
     font-size: 30px;
-    color: #70c0e6;
+    color: #ffffff;
+}
+
+#aba{
+    color: #5a81ff;
+    text-decoration:underline blue;
 }
 #signcontent{
     align-items: center;
     text-align: center;
+}
+#signcontent a:hover{
+    cursor: pointer;
+    color: #569ab9;
+    
 }
 
 #perfilcontent{

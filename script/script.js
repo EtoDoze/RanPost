@@ -1,3 +1,3 @@
 function goperfil(){
-    window.onload = "./acount.html"
+    window.location.href = "./acount.html"
 }

@@ -70,6 +70,10 @@ async function verificarToken() {
       
         if (!token) {
           console.error("Token não encontrado no localStorage.");
+          if(window.location.pathname.includes("index.html")){
+            const perfil = document.getElementById("perfilcontent"); 
+            perfil.remove()
+          }
           return;
         }
       

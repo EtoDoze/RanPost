@@ -73,6 +73,8 @@ async function verificarToken() {
           if(window.location.pathname.includes("index.html")){
             const perfil = document.getElementById("perfilcontent"); 
             perfil.remove()
+            const add = document.getElementById("add"); 
+            add.remove()
           }
           return;
         }

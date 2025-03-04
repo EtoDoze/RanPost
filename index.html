@@ -17,9 +17,11 @@
         <div id="signcontent">
             <a id="cadastro" href="sign.html">Cadastro</a>
             <a id="logar" href="login.html">Logar</a>
-            <div id="perfilcontent" onclick="goperfil()">
-                <p id="user"></p>
-                <i class="material-icons">account_circle</i>
+            <div id="perfilcontent">
+                <i class="material-icons" onclick="gocreate()" id="add">add_circle</i>
+                <i class="material-icons" id="add" onclick="gosettings()">settings</i>
+                <p id="user" onclick="goperfil()"></p>
+                <i class="material-icons" onclick="goperfil()">account_circle</i>
             </div>
     </div>
     </header>

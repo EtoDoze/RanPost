@@ -287,6 +287,18 @@ header{
     font-size: 40px;
 }
 
+#perfilcontent i p{
+    color: #5a81ff;
+}
+#perfilcontent #add{
+    font-size: 40px;
+    margin-right: 20px;
+    color: white;
+}
+#perfilcontent #add:hover{
+    color: #5a81ff;
+}
+
 #logo i{
     color: #9bd1eb;
 }
@@ -353,3 +365,43 @@ header h6{
     100%{font-family:fantasy}
 }
 
+
+
+/*          CREATE              */
+
+
+.creat-box{
+    background: #7c67db57;
+    box-shadow: 5px 5px 10px rgba(51, 12, 83, 0.5);
+    width: 50vw;
+    height: 90vh;
+    border-radius: 5px;
+}
+
+.creat-box h4{
+    font-size: 20px;
+    margin: 10px;
+}
+
+#txt_content{
+    display: flex;
+    flex-direction: column;
+}
+
+#title_create{
+    height: 10vh;
+    font-size: 30px;
+}
+#title_create::placeholder{
+    color: black;
+}
+
+textarea {
+    width: 100%; /* Faz o campo ocupar toda a largura do container */
+    height: 80vh; /* Define uma altura fixa */
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* Permite que o usuário ajuste a altura */
+  }
